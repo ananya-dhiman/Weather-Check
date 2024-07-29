@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather-Check</title>
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <img class="logo" src="/src/assets/day-and-night (1).png">
+            <h1>Weather-Check</h1>
+            <form id="search-form">
+                <input type="text" id="city" name="city" placeholder="Search City">
+                <button id="sub" type="button">Search</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <button id="toggle">°C</button>
+        <div id="weather-info">
+            <!-- Weather information for the week will be displayed here -->
+            <p id="tempMain"></p>
+
+            
+            
+            <div id="days">
+            <div id="sunday" class="weather-day">
+                <h2>Sunday</h2>
+                <p>Max: <span id="sunday-max"></span></p>
+                <p>Min: <span id="sunday-min"></span></p>
+            </div>
+            <div id="monday" class="weather-day">
+                <h2>Monday</h2>
+                <p>Max: <span id="monday-max"></span></p>
+                <p>Min: <span id="monday-min"></span></p>
+            </div>
+            <div id="tuesday" class="weather-day">
+                <h2>Tuesday</h2>
+                <p>Max: <span id="tuesday-max"></span></p>
+                <p>Min: <span id="tuesday-min"></span></p>
+            </div>
+            <div id="wednesday" class="weather-day">
+                <h2>Wednesday</h2>
+                <p>Max: <span id="wednesday-max"></span></p>
+                <p>Min: <span id="wednesday-min"></span></p>
+            </div>
+            <div id="thursday" class="weather-day">
+                <h2>Thursday</h2>
+                <p>Max: <span id="thursday-max"></span></p>
+                <p>Min: <span id="thursday-min"></span></p>
+            </div>
+            <div id="friday" class="weather-day">
+                <h2>Friday</h2>
+                <p>Max: <span id="friday-max"></span></p>
+                <p>Min: <span id="friday-min"></span></p>
+            </div>
+            <div id="saturday" class="weather-day">
+                <h2>Saturday</h2>
+                <p>Max: <span id="saturday-max"></span></p>
+                <p>Min: <span id="saturday-min"></span></p>
+            </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+<script src="script.js"></script>
